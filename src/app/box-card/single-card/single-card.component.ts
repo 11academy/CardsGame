@@ -12,7 +12,7 @@ export class SingleCardComponent implements OnInit {
 	constructor(private activatedRoute: ActivatedRoute) {}
 
 	ngOnInit() {
-		
+		//passaggio di valore
 		this.activatedRoute.params.subscribe(p => {
 			this.num = p["num"]
 		})

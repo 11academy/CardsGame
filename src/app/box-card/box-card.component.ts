@@ -7,10 +7,7 @@ import { ActivatedRoute } from "@angular/router"
 	styleUrls: ["./box-card.component.css"]
 })
 export class BoxCardComponent implements OnInit {
-	card_number = [1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
-
-
-
+	card_number: any;
 	num: number;
 	
 
@@ -20,10 +17,11 @@ export class BoxCardComponent implements OnInit {
 		console.log(this.num)
 	}
 
-	constructor(private route: ActivatedRoute) {}
+	constructor() {}
 
 	ngOnInit() {
+		this.card_number = [1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
 	
-		//this.route.params.subscribe((params) => this.myValue = params.myValue)
+		
 	}
 }
