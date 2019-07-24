@@ -9,14 +9,40 @@
     margin: 0 auto;
     font-family: 'Monoton', cursive;
 }
+.card-container{
+    display: inline-block;
+    width: 160px;
+    max-width: calc( 33vw - 25px);
+    margin: 10px;
+}
 .card-globale{
-    height:200px;
-    width:150px;
+    height: auto;
+    width: 100%;
     background-color: #fff;
-    text-align:center;
-    display:inline-block;
+    text-align: center;
+    display: block;
+    box-sizing: border-box;
     border: 2px solid #110e0e;
-    border-radius:25px;
-    margin:12px;
-    border:10px double #028090;
+    border-radius: 25px;
+    margin: 0;
+    border: 10px double #028090;
+    padding: 130% 0 0;
+    position: relative;
+}
+.card-globale p{
+    font-size:52px;
+    margin-top: 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+@media screen and (max-width: 430px){
+    .card-globale p{
+        font-size: 40px;
+    }
 }

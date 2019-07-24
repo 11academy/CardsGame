@@ -9,7 +9,7 @@ import { ActivatedRoute } from "@angular/router"
 export class BoxCardComponent implements OnInit {
 	card_number = [1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
 
-
+	show: boolean = true;
 
 	num: number;
 	

@@ -1,12 +1,11 @@
 <!--PADRE-->
-<div class="centro">
-	<div
-		class="card-globale"
-		*ngFor="let num of card_number"
-		(click)="getCurrentCard(num)"
-		[routerLink]="['/carta-coperta', num]"
-	>
-		<p style="font-size:52px;margin-top:65px;">{{ num }}</p>
+<div class="centro" *ngIf="show">
+	<div class="card-container" *ngFor="let num of card_number"
+	(click)="getCurrentCard(num)"
+	[routerLink]="['/carta-coperta', num]">
+		<div class="card-globale">
+			<p >{{ num }}</p>
+		</div>
 	</div>
 </div>
 <app-single-card style="display:none" [num]="num"></app-single-card>
