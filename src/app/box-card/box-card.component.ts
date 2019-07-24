@@ -7,7 +7,10 @@ import { ActivatedRoute } from "@angular/router"
 	styleUrls: ["./box-card.component.css"]
 })
 export class BoxCardComponent implements OnInit {
-	card_number: any;
+	card_number = [1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+
+	show: boolean = true;
+
 	num: number;
 	
 

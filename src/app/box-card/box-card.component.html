@@ -1,12 +1,12 @@
 <!--PADRE-->
-
-<div
-	style="height:200px; width:150px;background-color:rgb(57, 171, 209); text-align:center; display:inline-block; border:2px solid black;border-radius:25px;margin:12px;border:10px double goldenrod"
-	*ngFor="let num of card_number"
+<div class="centro" *ngIf="show">
+	<div class="card-container" *ngFor="let num of card_number"
 	(click)="getCurrentCard(num)"
-	[routerLink]="['/carta-coperta', num]"
->
-	<p style="font-size:52px;margin-top:65px;">{{ num }}</p>
+	[routerLink]="['/carta-coperta', num]">
+		<div class="card-globale">
+			<p >{{ num }}</p>
+		</div>
+	</div>
 </div>
 <app-single-card style="display:none" [num]="num"></app-single-card>
 <app-carta-coperta style="display:none" [num]="num"></app-carta-coperta>

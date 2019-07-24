@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { BoxCardComponent } from './box-card/box-card.component';
 import { SingleCardComponent } from './box-card/single-card/single-card.component';
 import { Routes, RouterModule } from '@angular/router';
-
 import { CartaCopertaComponent } from './box-card/carta-coperta/carta-coperta.component';
 
 const rotte: Routes = [
