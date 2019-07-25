@@ -1,5 +1,5 @@
 <!--PADRE-->
-<div class="centro" *ngIf="show">
+<div class="centro">
 	<div class="card-container" *ngFor="let num of card_number"
 	(click)="getCurrentCard(num)"
 	[routerLink]="['/carta-coperta', num]">
