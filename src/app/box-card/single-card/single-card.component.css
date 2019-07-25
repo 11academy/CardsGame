@@ -8,4 +8,8 @@
     border: 20px double #fb7200;
     text-align: center;
     font-family: 'Monoton', cursive;
+    margin: 0 auto;
+}
+.card-figlia p {
+    font-size: 132px;
 }
