@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
-.card-figlia{
+.card-figlia {
     box-sizing: border-box;
     width: 350px;
     height: 550px;
@@ -8,4 +8,26 @@
     border: 20px double #fb7200;
     text-align: center;
     font-family: 'Monoton', cursive;
+}
+
+.giro {
+    box-sizing: border-box;
+    width: 350px;
+    height: 550px;
+    background-color: pink;
+    border-radius: 25px;
+    border: 20px double #fb7200;
+    font-family: 'Monoton', cursive;
+    text-align: center;
+    animation-name: rotation;
+    animation-duration: 5s;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotateY(90deg)
+    }
+    to {
+        transform: rotateY(-180deg);
+    }
 }

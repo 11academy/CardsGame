@@ -1,11 +1,33 @@
 @import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
-.carta-coperta{
+.carta-coperta {
     box-sizing: border-box;
-    width:350px;
-    height:550px;
-    background-color:black;
-    border-radius:25px;
-    border:20px double #fb7200;
+    width: 350px;
+    height: 550px;
+    background-color: black;
+    border-radius: 25px;
+    border: 20px double #fb7200;
     font-family: 'Monoton', cursive;
     text-align: center;
+}
+
+.giro {
+    box-sizing: border-box;
+    width: 350px;
+    height: 550px;
+    background-color: lime;
+    border-radius: 25px;
+    border: 20px double #fb7200;
+    font-family: 'Monoton', cursive;
+    text-align: center;
+    animation-name: rotation;
+    animation-duration: 5s;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotateY(0deg)
+    }
+    to {
+        transform: rotateY(90deg);
+    }
 }

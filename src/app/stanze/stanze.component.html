@@ -1,0 +1,11 @@
+<p>Elenco delle stanze</p>
+<div (click)="getStanze()">VisualizzaStanze</div>
+
+
+<div *ngFor="let stanza of stanze">
+  {{stanza.attributes.title }}
+  {{stanza.attributes.field_utente}}
+  {{stanza.attributes.field_voto}}
+</div>
+
+
