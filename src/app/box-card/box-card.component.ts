@@ -7,7 +7,7 @@ import { ActivatedRoute } from "@angular/router"
 	styleUrls: ["./box-card.component.css"]
 })
 export class BoxCardComponent implements OnInit {
-	card_number = [0, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, "?"]
+	card_number: any
 
 	num: number;
 	
@@ -19,7 +19,7 @@ export class BoxCardComponent implements OnInit {
 	constructor() {}
 
 	ngOnInit() {
-		this.card_number = [1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+		this.card_number = [0, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, "?"]
 	
 		
 	}
