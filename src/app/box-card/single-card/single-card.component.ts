@@ -8,11 +8,16 @@ import { ActivatedRoute } from "@angular/router"
 })
 export class SingleCardComponent implements OnInit {
 	@Input() num
+	cardRotation() {
+
+		let elem = <HTMLElement>document.querySelector('.card-figlia');
+		elem.className = "giro"
+	}
 
 	constructor(private activatedRoute: ActivatedRoute) {}
 
 	ngOnInit() {
-		
+		//passaggio di valore
 		this.activatedRoute.params.subscribe(p => {
 			this.num = p["num"]
 		})
