@@ -9,7 +9,17 @@
     text-align: center;
     font-family: 'Monoton', cursive;
     margin: 0 auto;
+    animation: fadeIn;
+    animation-duration: 4s;
 }
 .card-figlia p {
     font-size: 132px;
+}
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
